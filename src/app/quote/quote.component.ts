@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    { Author: '', name: '' },
-    { Author: '', name: '' },
-    { Author: '', name: '' },
-    { Author: '', name: '' },
-    { Author: '', name: '' },
-    { Author: '', name: '' },
+    { Author: '', name: '', description: '1' },
+    { Author: '', name: '', description: '2' },
+    { Author: '', name: '', description: '3' },
+    { Author: '', name: '', description: '4' },
+    { Author: '', name: '', description: '5' },
+    { Author: '', name: '', description: '6' },
   ];
 
   constructor() {}

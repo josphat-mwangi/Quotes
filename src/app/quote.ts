@@ -1,4 +1,5 @@
 export class Quote {
-  Author: '';
-  name: '';
+  Author: string;
+  name: string;
+  description: string;
 }
