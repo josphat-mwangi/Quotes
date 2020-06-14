@@ -8,13 +8,18 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote('', '', '1'),
-    new Quote('', '', '2'),
-    new Quote('', '', '3'),
-    new Quote('', '', '4'),
-    new Quote('', '', '5'),
-    new Quote('', '', '6'),
+    new Quote(1, '', '', '1'),
+    new Quote(2, '', '', '2'),
+    new Quote(3, '', '', '3'),
+    new Quote(4, '', '', '4'),
+    new Quote(5, '', '', '5'),
+    new Quote(6, '', '', '6'),
   ];
+  addnewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote);
+  }
   toggleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }

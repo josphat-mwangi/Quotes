@@ -1,14 +1,34 @@
 <div class="container-fluid">
-  <h2 class="text-center">Add Quote</h2>
+  <h2 class="text-center">Add QUOTE</h2>
   <hr />
-  <form>
+  <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="form-group">
       <label for="name">Author</label>
-      <input type="text" required class="form-control" id="name" />
+      <input
+        type="text"
+        required
+        class="form-control"
+        id="name"
+        [(ngModel)]="newQuote.Author"
+        name="name"
+      />
+
+      <!-- Testing to see if we get any data -->
+      Display {{ newQuote.name }}
     </div>
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" required class="form-control" id="name" />
+      <input
+        type="text"
+        required
+        class="form-control"
+        id="name"
+        [(ngModel)]="newQuote.name"
+        name="name"
+      />
+
+      <!-- Testing to see if we get any data -->
+      Display {{ newQuote.name }}
     </div>
     <div class="form-group">
       <label for="description">Description</label>
@@ -19,10 +39,10 @@
         required
       ></textarea>
     </div>
-
     <div class="form-group">
       <label for="complete">Completion</label>
       <input type="date" id="complete" required />
     </div>
+    <button type="submit" class="btn btn-success">Add Goal</button>
   </form>
 </div>
