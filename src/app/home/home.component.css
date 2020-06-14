@@ -1,0 +1,12 @@
+.hero {
+  background-image: url(../../assets/pexels-photo-326055.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+#pace {
+  font-size: xx-large;
+  text-align: center;
+  color: yellow;
+  padding: 250px;
+}
