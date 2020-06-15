@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HighlightDirective } from './highlight.directive';
     HomeComponent,
     HeaderComponent,
     HighlightDirective,
+    DateCountPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
