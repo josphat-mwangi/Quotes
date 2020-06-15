@@ -11,32 +11,20 @@ export class QuoteComponent implements OnInit {
     new Quote(
       'Buddha',
       'John',
-      'No matter how hard the past, you can always begin again.'
+      'No matter how hard the past, you can always begin again',
+      new Date(2020, 3, 14)
     ),
     new Quote(
       'Frank Ocean',
       'Jopa',
-      'Work hard in silence, let your succes be your noise'
+      'Work hard in silence, let your succes be your noise',
+      new Date(2019, 6, 9)
     ),
     new Quote(
       'Oprah Winfrey',
       'Tumi',
-      'Do what you have to do until you can do what you want to do'
-    ),
-    new Quote(
-      'Colin Powell',
-      'Kobie',
-      'There are no secrets to success.It is the result of preparation,hard work, and learning from failure'
-    ),
-    new Quote(
-      'Abraham Lincoln',
-      'Simi',
-      'Discpline is choosing between what you want now and waht you want most.'
-    ),
-    new Quote(
-      'John F Kenndy',
-      'Elsie',
-      'Do not for easy lives, pray to be stronger men'
+      'Do what you have to do until you can do what you want to do',
+      new Date(2020, 6, 4)
     ),
   ];
 

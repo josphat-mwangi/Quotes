@@ -11,7 +11,8 @@ export class QuoteFormComponent implements OnInit {
     '',
 
     '',
-    ''
+    '',
+    new Date()
   );
   @Output() addQuote = new EventEmitter<Quote>();
   submitQuote() {

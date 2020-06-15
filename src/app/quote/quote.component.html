@@ -2,12 +2,16 @@
   <div class="col-md-6">
     <h1>QUOTES</h1>
     <hr />
-    <div class="card text-center container" style="border-radius: 25px;">
+    <div
+      class="card text-center container"
+      style="border-radius: 25px; background: transparent;"
+    >
       <div class="card-body">
         <ul>
           <div *ngFor="let quote of quotes; let i = index">
             <li>
-              {{ quote.name }}
+              {{ quote.name }} due on
+              {{ quote.completeDate | date | uppercase }}
             </li>
             <li></li>
             <button
